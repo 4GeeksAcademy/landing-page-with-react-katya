@@ -35,10 +35,10 @@ export default function Jumbotron() {
               </div>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src="https://picsum.photos/id/35/1380/500" style={{maxHeight: "auto"}} className="d-block w-100" alt="..." />
+                  <img src="https://picsum.photos/id/49/1380/500" style={{maxHeight: "auto"}} className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
-                  <img src="https://picsum.photos/id/36/1380/500" className="d-block w-100" alt="..." />
+                  <img src="https://picsum.photos/id/46/1380/500" className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
                   <img src="https://picsum.photos/id/37/1380/500" className="d-block w-100" alt="..." />
