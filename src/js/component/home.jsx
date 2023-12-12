@@ -12,7 +12,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Jumbotron />
-      <div class="p-5 pt-0 container-fluid d-flex flex-column align-items-center justify-content-center">
+      <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
         <div class="row">
           <Card />
           <Card />

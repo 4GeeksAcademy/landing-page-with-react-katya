@@ -2,9 +2,10 @@ import React from "react";
 
 export default function Card() {
   return (
+    <div className="col-lg-3 col-sm-12 col-md-6">
     <div
-      className="card col-lg-3 col-sm-12 col-md-4 p-0 m-3"
-      style={{ maxWidth: "300px" }}
+      className="card m-2"
+      style={{maxWidth: "350px"}}
     >
       <img
         src="https://picsum.photos/300/300"
@@ -21,6 +22,6 @@ export default function Card() {
           Go somewhere
         </a>
       </div>
-    </div>
+    </div></div>
   );
 }
