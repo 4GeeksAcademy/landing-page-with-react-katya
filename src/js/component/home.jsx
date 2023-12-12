@@ -4,6 +4,7 @@ import React from "react";
 import Jumbotron from "./jumbotron";
 import Navbar from "../navbar";
 import Card from "./card";
+import Footer from "./footer";
 
 //create your first component
 const Home = () => {
@@ -11,12 +12,15 @@ const Home = () => {
     <div>
       <Navbar />
       <Jumbotron />
-      <div class="d-flex justify-content-center">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+      <div class="p-5 pt-0 container-fluid d-flex flex-column align-items-center justify-content-center">
+        <div class="row">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };
