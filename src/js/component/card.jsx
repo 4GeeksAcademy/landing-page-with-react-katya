@@ -1,11 +1,15 @@
 import React from "react";
+import PropType from "prop-types";
 
-export default function Card() {
+const image = "https://picsum.photos/300/300";
+  
+
+export default function Card(props) {
   return (
     <div className="col-lg-3 col-sm-12 col-md-6">
       <div className="card border-success m-2" style={{ maxWidth: "350px" }}>
         <img
-          src="https://picsum.photos/300/300"
+          src={image}
           className="card-img-top"
           alt="..."
         />
@@ -24,4 +28,9 @@ export default function Card() {
       </div>
     </div>
   );
-}
+};
+
+Card.propTypes = {
+  imgUrl: PropType.string,
+};
+

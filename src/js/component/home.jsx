@@ -28,12 +28,6 @@ const Home = () => {
           <Card />
           <Card />
         </div>
-        <div class="row">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
       </div>
       <Footer />
     </div>
