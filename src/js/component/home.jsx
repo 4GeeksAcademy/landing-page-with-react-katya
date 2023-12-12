@@ -12,7 +12,19 @@ const Home = () => {
     <div>
       <Navbar />
       <Jumbotron />
-      <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
+      <div class="container-fluid d-flex flex-column align-items-center justify-content-center mt-5">
+        <div class="row">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <div class="row">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
         <div class="row">
           <Card />
           <Card />

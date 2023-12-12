@@ -2,11 +2,12 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-info">
+    <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
+      <a class="navbar-brand w-75" href="#">
+      <img src="https://www.iconpacks.net/icons/2/free-hotel-icon-1808-thumb.png" alt="" width="30" height="24" class="d-inline-block align-text-top" />
+       Hotels
+    </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -18,8 +19,8 @@ export default function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul className="navbar-nav ">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
                 Home
@@ -27,16 +28,16 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Features
+                Destinations
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Pricing
+                Stays
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled">Disabled</a>
+              <a className="nav-link" href="#">Customer Service</a>
             </li>
           </ul>
         </div>
