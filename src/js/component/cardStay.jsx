@@ -1,12 +1,15 @@
 import React from "react";
-import PropType from "prop-types";
 
-export default function CardStay(props) {
+export default function CardStay() {
   return (
     <div className="row justify-content-center">
-      <div className="col-lg-8 col-sm-12">
+      <div className="col-lg-9">
         <div className="card text-bg-dark border-success m-2 mt-4">
-          <img src={props.imgUrl} className="card-img" alt="..." />
+          <img
+            src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg"
+            className="card-img responsiveImage"
+            alt="..."
+          />
           <div className="card-img-overlay">
             <div className="card-title">
               <ul
@@ -66,25 +69,21 @@ export default function CardStay(props) {
                   tabindex="0"
                 >
                   <div className="card-body">
-                    <h5 className="card-title">Prototype Hotel Name </h5>
+                    <h5 className="card-title text-warning">
+                      Prototype Hotel Name{" "}
+                    </h5>
                     <span>
-                      <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star text-warning"></i>
+                      <i className="fas fa-star text-warning"></i>
+                      <i className="fas fa-star text-warning"></i>
+                      <i className="fas fa-star text-warning"></i>
                     </span>
                     <p className="card-text mt-1">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the 1500s, when an unknown
                       printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged. It was popularised in the
-                      1960s with the release of Letraset sheets containing Lorem
-                      Ipsum passages, and more recently with desktop publishing
-                      software like Aldus PageMaker including versions of Lorem
-                      Ipsum
+                      type specimen book.
                     </p>
                   </div>
                 </div>
@@ -97,8 +96,9 @@ export default function CardStay(props) {
                   tabindex="0"
                 >
                   <div className="card-body">
-                    <h5 className="card-title">
-                      <i className="fas fa-map-marker-alt"></i> Location City{" "}
+                    <h5 className="card-title text-warning">
+                      <i className="fas fa-map-marker-alt text-warning"></i>{" "}
+                      Location City{" "}
                     </h5>
                     <p>Address</p>
                   </div>
@@ -111,40 +111,47 @@ export default function CardStay(props) {
                   aria-labelledby="tabs-availability-tab"
                   tabindex="0"
                 >
-                  <div className="d-flex flex-row mt-5">
-                    <div className="input-group mb-3">
-                      <span
-                        className="input-group-text "
-                        id="inputGroup-sizing-default"
-                      >
-                        Check-in
-                      </span>
-                      <input
-                        type="date"
-                        className="form-control"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default"
-                      />
-                    </div>
-                    <div className="input-group mb-3">
-                      <span
-                        className="input-group-text "
-                        id="inputGroup-sizing-default"
-                      >
-                        Check-out
-                      </span>
-                      <input
-                        type="date"
-                        className="form-control"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default"
-                      />
-                    </div>
-                  </div>
-                  <div className="d-flex justify-content-center mt-5">
-                    <a href="#" className="btn btn-success w-75 fw-bold">
-                      Search
-                    </a>
+                  <div className="card-body container-fluid d-flex flex-column align-items-center justify-content-center">
+                    <h5 className="card-title text-warning mb-3">
+                      Choose your dates
+                    </h5>
+                    <div>
+                      {" "}
+                      
+                        <div className="input-group mb-3">
+                          <span
+                            className="input-group-text "
+                            id="inputGroup-sizing-default"
+                          >
+                            Check-in
+                          </span>
+                          <input
+                            type="date"
+                            className="form-control"
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default"
+                          />
+                        </div>
+                        <div className="input-group mb-3">
+                          <span
+                            className="input-group-text "
+                            id="inputGroup-sizing-default"
+                          >
+                            Check-out
+                          </span>
+                          <input
+                            type="date"
+                            className="form-control"
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default"
+                          />
+                        </div>
+                      </div>
+                      <div className="w-50 container-fluid d-flex flex-column align-items-center justify-content-center">
+                      <a href="#" className="btn btn-success fw-bold">
+                        Search
+                      </a>
+                </div>
                   </div>
                 </div>
               </div>
@@ -155,7 +162,3 @@ export default function CardStay(props) {
     </div>
   );
 }
-
-CardStay.propTypes = {
-  imgUrl: PropType.string,
-};

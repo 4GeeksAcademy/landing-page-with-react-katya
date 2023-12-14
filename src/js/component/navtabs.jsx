@@ -14,7 +14,7 @@ const imagesDestinations = [
 ];
 
 const imagesStays = [
-  { url: "https://picsum.photos/id/1040/700/300" },
+  { url: "https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" },
   { url: "https://picsum.photos/id/77/700/300" },
   { url: "https://picsum.photos/id/57/700/300" },
   { url: "https://picsum.photos/id/947/700/300" },
@@ -118,7 +118,7 @@ export default function NavTabs() {
           aria-labelledby="carRentals-tab"
           tabindex="0"
         >
-          CAR RENTALS
+          
         </div>
       </div>
     </div>

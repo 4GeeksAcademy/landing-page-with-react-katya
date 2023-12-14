@@ -1,12 +1,13 @@
 
-/* 
-
-    You can write your own styles here...
+.responsiveImage {
+    height: 350px;
+    width: auto;
+    object-fit: cover;
+  }
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+  /* On screens that are 600px or less*/
+  @media screen and (max-width: 600px) {
+    .responsiveImage {
+      height: 400px;
+    }
+  }
