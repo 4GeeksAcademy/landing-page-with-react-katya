@@ -3,7 +3,7 @@ import React from "react";
 export default function CardStay() {
   return (
     
-      <div className="col-lg-6 col-sm-12 justify-content-center g-5">
+      <div className="col-lg-4 col-sm-12 justify-content-center g-5">
         <div className="card text-bg-dark border-success">
           <img
             src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg"

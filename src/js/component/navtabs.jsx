@@ -100,6 +100,7 @@ export default function NavTabs() {
             <div className="row">
               <CardStay />
               <CardStay />
+              <CardStay />
             </div>
           </div>
         </div>
