@@ -58,7 +58,7 @@ export default function NavTabs() {
             aria-controls="stays-tab-pane"
             aria-selected="false"
           >
-            <i class="fas fa-bed text-success fs-4"></i>
+            <i className="fas fa-bed text-success fs-4"></i>
           </button>
         </li>
         <li className="nav-item" role="presentation">
@@ -72,7 +72,7 @@ export default function NavTabs() {
             aria-controls="carRentals-tab-pane"
             aria-selected="false"
           >
-            <i class="fas fa-car text-success fs-4"></i>
+            <i className="fas fa-car text-success fs-4"></i>
           </button>
         </li>
       </ul>
@@ -85,14 +85,14 @@ export default function NavTabs() {
           aria-labelledby="destinations-tab"
           tabindex="0"
         >
-          <div class="container-fluid d-flex flex-column align-items-center justify-content-center mt-5">
-            <div class="row">
+          <div className="container-fluid d-flex flex-column align-items-center justify-content-center mt-5">
+            <div className="row">
               <CardDestination imgUrl={imagesDestinations[0].url} />
               <CardDestination imgUrl={imagesDestinations[1].url} />
               <CardDestination imgUrl={imagesDestinations[2].url} />
               <CardDestination imgUrl={imagesDestinations[3].url} />
             </div>
-            <div class="row">
+            <div className="row">
               <CardDestination imgUrl={imagesDestinations[4].url} />
               <CardDestination imgUrl={imagesDestinations[5].url} />
               <CardDestination imgUrl={imagesDestinations[6].url} />
@@ -107,7 +107,7 @@ export default function NavTabs() {
           aria-labelledby="stays-tab"
           tabindex="0"
         >
-          <div class="align-items-center justify-content-center mt-5">
+          <div className="align-items-center justify-content-center mt-5">
             <CardStay imgUrl={imagesStays[0].url} />
           </div>
         </div>

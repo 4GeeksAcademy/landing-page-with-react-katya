@@ -5,18 +5,18 @@ export default function CardStay(props) {
   return (
     <div className="row justify-content-center">
       <div className="col-lg-8 col-sm-12">
-        <div class="card text-bg-dark border-success m-2 mt-4">
-          <img src={props.imgUrl} class="card-img" alt="..." />
-          <div class="card-img-overlay">
-            <div class="card-title">
+        <div className="card text-bg-dark border-success m-2 mt-4">
+          <img src={props.imgUrl} className="card-img" alt="..." />
+          <div className="card-img-overlay">
+            <div className="card-title">
               <ul
-                class="nav nav-tabs justify-content-end mb-3"
+                className="nav nav-tabs justify-content-end mb-3"
                 id="tabs-tab"
                 role="tablist"
               >
-                <li class="nav-item" role="presentation">
+                <li className="nav-item" role="presentation">
                   <button
-                    class="nav-link active"
+                    className="nav-link active"
                     id="tabs-about-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#tabs-about"
@@ -28,9 +28,9 @@ export default function CardStay(props) {
                     <span className="text-success">About</span>
                   </button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li className="nav-item" role="presentation">
                   <button
-                    class="nav-link"
+                    className="nav-link"
                     id="tabs-location-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#tabs-location"
@@ -42,9 +42,9 @@ export default function CardStay(props) {
                     <span className="text-success">Location</span>
                   </button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li className="nav-item" role="presentation">
                   <button
-                    class="nav-link"
+                    className="nav-link"
                     id="tabs-availability-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#tabs-availability"
@@ -57,23 +57,23 @@ export default function CardStay(props) {
                   </button>
                 </li>
               </ul>
-              <div class="tab-content" id="tabs-tabContent">
+              <div className="tab-content" id="tabs-tabContent">
                 <div
-                  class="tab-pane fade show active"
+                  className="tab-pane fade show active"
                   id="tabs-about"
                   role="tabpanel"
                   aria-labelledby="tabs-about-tab"
                   tabindex="0"
                 >
-                  <div class="card-body">
-                    <h5 class="card-title">Prototype Hotel Name </h5>
+                  <div className="card-body">
+                    <h5 className="card-title">Prototype Hotel Name </h5>
                     <span>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
                     </span>
-                    <p class="card-text mt-1">
+                    <p className="card-text mt-1">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the 1500s, when an unknown
@@ -90,52 +90,52 @@ export default function CardStay(props) {
                 </div>
 
                 <div
-                  class="tab-pane fade"
+                  className="tab-pane fade"
                   id="tabs-location"
                   role="tabpanel"
                   aria-labelledby="tabs-location-tab"
                   tabindex="0"
                 >
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <i class="fas fa-map-marker-alt"></i> Location City{" "}
+                  <div className="card-body">
+                    <h5 className="card-title">
+                      <i className="fas fa-map-marker-alt"></i> Location City{" "}
                     </h5>
                     <p>Address</p>
                   </div>
                 </div>
 
                 <div
-                  class="tab-pane fade"
+                  className="tab-pane fade"
                   id="tabs-availability"
                   role="tabpanel"
                   aria-labelledby="tabs-availability-tab"
                   tabindex="0"
                 >
                   <div className="d-flex flex-row mt-5">
-                    <div class="input-group mb-3">
+                    <div className="input-group mb-3">
                       <span
-                        class="input-group-text "
+                        className="input-group-text "
                         id="inputGroup-sizing-default"
                       >
                         Check-in
                       </span>
                       <input
                         type="date"
-                        class="form-control"
+                        className="form-control"
                         aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-default"
                       />
                     </div>
-                    <div class="input-group mb-3">
+                    <div className="input-group mb-3">
                       <span
-                        class="input-group-text "
+                        className="input-group-text "
                         id="inputGroup-sizing-default"
                       >
                         Check-out
                       </span>
                       <input
                         type="date"
-                        class="form-control"
+                        className="form-control"
                         aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-default"
                       />
