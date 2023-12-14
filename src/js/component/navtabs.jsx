@@ -1,6 +1,7 @@
 import React from "react";
 import CardDestination from "./cardDestionation";
 import CardStay from "./cardStay";
+import CarSearch from "./carSearch";
 
 const imagesDestinations = [
   { url: "https://picsum.photos/id/259/300/300" },
@@ -110,7 +111,13 @@ export default function NavTabs() {
           role="tabpanel"
           aria-labelledby="carRentals-tab"
           tabindex="0"
-        ></div>
+        >
+          <div className="container-fluid d-flex align-items-center justify-content-center">
+            <div className="row mt-5">
+              <CarSearch />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

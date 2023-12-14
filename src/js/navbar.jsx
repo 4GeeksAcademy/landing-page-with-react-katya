@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="container-fluid">
         <a class="navbar-brand w-75" href="#">
         <i class="fas fa-hotel text-success"></i>
-          <span className="text-success fw-semibold">  Company Prototype</span>
+          <span className="fw-semibold">  Company Prototype</span>
         </a>
         <button
           className="navbar-toggler"
