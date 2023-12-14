@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Jumbotron() {
+export default function Carousel() {
   return (
     <div classNameName="row d-flex align-items-center justify-content-center">
       <div classNameName="col-sm-12 col-lg-10">
@@ -35,7 +35,7 @@ export default function Jumbotron() {
               </div>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src="https://picsum.photos/id/49/1380/500" style={{maxHeight: "auto"}} className="d-block w-100" alt="..." />
+                  <img src="https://picsum.photos/id/49/1380/500" className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
                   <img src="https://picsum.photos/id/46/1380/500" className="d-block w-100" alt="..." />

@@ -5,13 +5,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
         <a class="navbar-brand w-75" href="#">
-          <img
-            src="https://www.iconpacks.net/icons/2/free-hotel-icon-1808-thumb.png"
-            alt=""
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
+        <i class="fas fa-hotel text-success"></i>
           <span className="text-success fw-semibold">  Company Prototype</span>
         </a>
         <button
