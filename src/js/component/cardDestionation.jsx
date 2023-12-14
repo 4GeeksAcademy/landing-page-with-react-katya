@@ -1,7 +1,7 @@
 import React from "react";
 import PropType from "prop-types";
 
-export default function Card(props) {
+export default function CardDestionation(props) {
   return (
     <div className="col-lg-3 col-sm-12 col-md-6">
       <div className="card border-success m-2" style={{ maxWidth: "350px" }}>
@@ -27,7 +27,7 @@ export default function Card(props) {
   );
 };
 
-Card.propTypes = {
+CardDestionation.propTypes = {
   imgUrl: PropType.string,
 };
 

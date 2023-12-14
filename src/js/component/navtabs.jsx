@@ -1,10 +1,30 @@
 import React from "react";
-import Card from "./card";
+import CardDestination from "./cardDestionation";
+import CardStay from "./cardStay";
 
-const images = [{url: "https://picsum.photos/id/129/300/300"}, {url: "https://picsum.photos/id/128/300/300"}, {url: "https://picsum.photos/id/122/300/300"}, {url: "https://picsum.photos/id/117/300/300"}, {url: "https://picsum.photos/id/84/300/300"}, {url: "https://picsum.photos/id/77/300/300"}, {url: "https://picsum.photos/id/74/300/300"}, {url: "https://picsum.photos/id/71/300/300"}]
+const imagesDestinations = [
+  { url: "https://picsum.photos/id/129/300/300" },
+  { url: "https://picsum.photos/id/128/300/300" },
+  { url: "https://picsum.photos/id/122/300/300" },
+  { url: "https://picsum.photos/id/158/300/300" },
+  { url: "https://picsum.photos/id/328/300/300" },
+  { url: "https://picsum.photos/id/259/300/300" },
+  { url: "https://picsum.photos/id/1083/300/300" },
+  { url: "https://picsum.photos/id/193/300/300" },
+];
+
+const imagesStays = [
+  { url: "https://picsum.photos/id/1040/700/300" },
+  { url: "https://picsum.photos/id/77/700/300" },
+  { url: "https://picsum.photos/id/57/700/300" },
+  { url: "https://picsum.photos/id/947/700/300" },
+  { url: "https://picsum.photos/id/460/700/300" },
+  { url: "https://picsum.photos/id/119/700/300" },
+  { url: "https://picsum.photos/id/645/700/300" },
+  { url: "https://picsum.photos/id/451/700/300" },
+];
 
 export default function NavTabs() {
-
   return (
     // -TABS-
     <div>
@@ -67,16 +87,16 @@ export default function NavTabs() {
         >
           <div class="container-fluid d-flex flex-column align-items-center justify-content-center mt-5">
             <div class="row">
-              <Card imgUrl={images[0].url}/>
-              <Card imgUrl={images[1].url}/>
-              <Card imgUrl={images[2].url}/>
-              <Card imgUrl={images[3].url}/>
+              <CardDestination imgUrl={imagesDestinations[0].url} />
+              <CardDestination imgUrl={imagesDestinations[1].url} />
+              <CardDestination imgUrl={imagesDestinations[2].url} />
+              <CardDestination imgUrl={imagesDestinations[3].url} />
             </div>
             <div class="row">
-              <Card imgUrl={images[4].url}/>
-              <Card imgUrl={images[5].url}/>
-              <Card imgUrl={images[6].url}/>
-              <Card imgUrl={images[7].url}/>
+              <CardDestination imgUrl={imagesDestinations[4].url} />
+              <CardDestination imgUrl={imagesDestinations[5].url} />
+              <CardDestination imgUrl={imagesDestinations[6].url} />
+              <CardDestination imgUrl={imagesDestinations[7].url} />
             </div>
           </div>
         </div>
@@ -87,7 +107,9 @@ export default function NavTabs() {
           aria-labelledby="stays-tab"
           tabindex="0"
         >
-          STAYS
+          <div class="align-items-center justify-content-center mt-5">
+            <CardStay imgUrl={imagesStays[0].url} />
+          </div>
         </div>
         <div
           className="tab-pane fade"
