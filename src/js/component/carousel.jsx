@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Carousel() {
   return (
-    <div className="row d-flex align-items-center justify-content-center">
+    <div className="row d-flex align-items-center justify-content-center px-2">
       <div className="col-12">
         <div
           id="carouselExampleIndicators"
@@ -31,24 +31,25 @@ export default function Carousel() {
               aria-label="Slide 3"
             ></button>
           </div>
-          <div className="carousel-inner">
+          <div className="carousel-inner rounded mt-3">
             <div className="carousel-item active">
               <img
-                src="https://picsum.photos/id/49/1380/500"
+                src="https://picsum.photos/id/294/1580/530"
+                className="d-block w-100"
+                alt="..."
+          
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="https://picsum.photos/id/218/1580/530"
                 className="d-block w-100"
                 alt="..."
               />
             </div>
             <div className="carousel-item">
               <img
-                src="https://picsum.photos/id/46/1380/500"
-                className="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src="https://picsum.photos/id/37/1380/500"
+                src="https://picsum.photos/id/249/1580/530"
                 className="d-block w-100"
                 alt="..."
               />

@@ -3,25 +3,14 @@ import CardDestination from "./cardDestionation";
 import CardStay from "./cardStay";
 
 const imagesDestinations = [
-  { url: "https://picsum.photos/id/129/300/300" },
+  { url: "https://picsum.photos/id/259/300/300" },
   { url: "https://picsum.photos/id/128/300/300" },
   { url: "https://picsum.photos/id/122/300/300" },
   { url: "https://picsum.photos/id/158/300/300" },
   { url: "https://picsum.photos/id/328/300/300" },
-  { url: "https://picsum.photos/id/259/300/300" },
+  { url: "https://picsum.photos/id/129/300/300" },
   { url: "https://picsum.photos/id/1083/300/300" },
   { url: "https://picsum.photos/id/193/300/300" },
-];
-
-const imagesStays = [
-  { url: "https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" },
-  { url: "https://picsum.photos/id/77/700/300" },
-  { url: "https://picsum.photos/id/57/700/300" },
-  { url: "https://picsum.photos/id/947/700/300" },
-  { url: "https://picsum.photos/id/460/700/300" },
-  { url: "https://picsum.photos/id/119/700/300" },
-  { url: "https://picsum.photos/id/645/700/300" },
-  { url: "https://picsum.photos/id/451/700/300" },
 ];
 
 export default function NavTabs() {
@@ -85,7 +74,7 @@ export default function NavTabs() {
           aria-labelledby="destinations-tab"
           tabindex="0"
         >
-          <div className="container-fluid d-flex flex-column align-items-center justify-content-center mt-5">
+          <div className="container-fluid d-flex flex-column align-items-center justify-content-center">
             <div className="row">
               <CardDestination imgUrl={imagesDestinations[0].url} />
               <CardDestination imgUrl={imagesDestinations[1].url} />
@@ -107,8 +96,11 @@ export default function NavTabs() {
           aria-labelledby="stays-tab"
           tabindex="0"
         >
-          <div className="align-items-center justify-content-center mt-5">
-            <CardStay imgUrl={imagesStays[0].url} />
+          <div className="align-items-center justify-content-center">
+            <div className="row">
+              <CardStay />
+              <CardStay />
+            </div>
           </div>
         </div>
         <div
@@ -117,9 +109,7 @@ export default function NavTabs() {
           role="tabpanel"
           aria-labelledby="carRentals-tab"
           tabindex="0"
-        >
-          
-        </div>
+        ></div>
       </div>
     </div>
   );
