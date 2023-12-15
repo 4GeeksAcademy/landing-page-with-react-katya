@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CarSearch() {
   return (
-    <div className="col-lg-12 g-5">
+    <div className="col-lg-12">
       <h3 className="text-warning mb-1">Car rentals for any kind of trip</h3>
       <p className="text-muted mb-4">
         Great deals at great prices, from the biggest car rental companies
