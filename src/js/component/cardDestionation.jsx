@@ -1,7 +1,7 @@
 import React from "react";
 import PropType from "prop-types";
 
-export default function CardDestionation(props) {
+export default function CardDestination(props) {
   return (
     <div className="col-lg-3 col-sm-12 col-md-6 g-5">
       <div className="card border-success mx-auto" style={{ maxWidth: "350px" }}>
