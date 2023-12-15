@@ -1,6 +1,7 @@
 import React from "react";
+import PropType from "prop-types";
 
-export default function CardStay() {
+export default function CardStay(props) {
   return (
     <div className="col-lg-4 col-sm-12 justify-content-center g-5">
       <div className="card text-bg-dark border-success">
@@ -19,12 +20,12 @@ export default function CardStay() {
               <li className="nav-item" role="presentation">
                 <button
                   className="nav-link active"
-                  id="tabs-about-tab"
+                  id={props.buttonIdAbout}
                   data-bs-toggle="tab"
-                  data-bs-target="#tabs-about"
+                  data-bs-target={props.targetAbout}
                   type="button"
                   role="tab"
-                  aria-controls="tabs-about"
+                  aria-controls={props.contentIdAbout}
                   aria-selected="true"
                 >
                   <span className="text-success">About</span>
@@ -33,12 +34,12 @@ export default function CardStay() {
               <li className="nav-item" role="presentation">
                 <button
                   className="nav-link"
-                  id="tabs-location-tab"
+                  id={props.buttonIdLocation}
                   data-bs-toggle="tab"
-                  data-bs-target="#tabs-location"
+                  data-bs-target={props.targetLocation}
                   type="button"
                   role="tab"
-                  aria-controls="tabs-location"
+                  aria-controls={props.contentIdLocation}
                   aria-selected="false"
                 >
                   <span className="text-success">Location</span>
@@ -47,12 +48,12 @@ export default function CardStay() {
               <li className="nav-item" role="presentation">
                 <button
                   className="nav-link"
-                  id="tabs-availability-tab"
+                  id={props.buttonIdAvailability}
                   data-bs-toggle="tab"
-                  data-bs-target="#tabs-availability"
+                  data-bs-target={props.targetAvailability}
                   type="button"
                   role="tab"
-                  aria-controls="tabs-availability"
+                  aria-controls={props.contentIdAvailability}
                   aria-selected="false"
                 >
                   <span className="text-success">Availability</span>
@@ -62,9 +63,9 @@ export default function CardStay() {
             <div className="tab-content" id="tabs-tabContent">
               <div
                 className="tab-pane fade show active"
-                id="tabs-about"
+                id={props.contentIdAbout}
                 role="tabpanel"
-                aria-labelledby="tabs-about-tab"
+                aria-labelledby={props.buttonIdAbout}
                 tabindex="0"
               >
                 <div className="card-body">
@@ -92,9 +93,9 @@ export default function CardStay() {
 
               <div
                 className="tab-pane fade"
-                id="tabs-location"
+                id={props.contentIdLocation}
                 role="tabpanel"
-                aria-labelledby="tabs-location-tab"
+                aria-labelledby={props.buttonIdLocation}
                 tabindex="0"
               >
                 <div className="card-body">
@@ -110,9 +111,9 @@ export default function CardStay() {
 
               <div
                 className="tab-pane fade"
-                id="tabs-availability"
+                id={props.contentIdAvailability}
                 role="tabpanel"
-                aria-labelledby="tabs-availability-tab"
+                aria-labelledby={props.buttonIdAvailability}
                 tabindex="0"
               >
                 <div className="card-body container-fluid d-flex flex-column align-items-center justify-content-center">
@@ -165,4 +166,16 @@ export default function CardStay() {
       </div>
     </div>
   );
-}
+};
+
+CardStay.propTypes = {
+  buttonIdAbout: PropType.string,
+  targetAbout: PropType.string,
+  contentIdAbout: PropType.string,
+  buttonIdLocation: PropType.string,
+  targetLocation: PropType.string,
+  contentIdLocation: PropType.string,
+  buttonIdAvailability: PropType.string,
+  targetAvailability: PropType.string,
+  contentIdAvailability: PropType.string,
+};

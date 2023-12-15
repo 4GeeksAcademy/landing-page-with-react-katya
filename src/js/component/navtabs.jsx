@@ -95,9 +95,39 @@ export default function NavTabs() {
         >
           <div className="align-items-center justify-content-center">
             <div className="row">
-              <CardStay />
-              <CardStay />
-              <CardStay />
+              <CardStay 
+              buttonIdAbout="tabs-about1-tab"
+              contentIdAbout="tabs-about1"
+              targetAbout= "#tabs-about1"
+              buttonIdLocation="tabs-location1-tab"
+              contentIdLocation="tabs-location1"
+              targetLocation="#tabs-location1"
+              buttonIdAvailability="tabs-availability1-tab"
+              contentIdAvailability="tabs-availability1"
+              targetAvailability="#tabs-availability1"/>
+
+              <CardStay 
+              buttonIdAbout="tabs-about2-tab"
+              contentIdAbout="tabs-about2"
+              targetAbout= "#tabs-about2"
+              buttonIdLocation="tabs-location2-tab"
+              contentIdLocation="tabs-location2"
+              targetLocation="#tabs-location2"
+              buttonIdAvailability="tabs-availability2-tab"
+              contentIdAvailability="tabs-availability2"
+              targetAvailability="#tabs-availability2"/>
+
+<CardStay 
+              buttonIdAbout="tabs-about3-tab"
+              contentIdAbout="tabs-about3"
+              targetAbout= "#tabs-about3"
+              buttonIdLocation="tabs-location3-tab"
+              contentIdLocation="tabs-location3"
+              targetLocation="#tabs-location3"
+              buttonIdAvailability="tabs-availability3-tab"
+              contentIdAvailability="tabs-availability3"
+              targetAvailability="#tabs-availability3"/>
+
             </div>
           </div>
         </div>
