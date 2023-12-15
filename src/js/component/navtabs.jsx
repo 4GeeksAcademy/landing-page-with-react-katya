@@ -112,8 +112,8 @@ export default function NavTabs() {
           aria-labelledby="carRentals-tab"
           tabindex="0"
         >
-          <div className="container-fluid d-flex align-items-center justify-content-center">
-            <div className="row mt-5">
+          <div className="container-fluid d-flex align-items-center justify-content-center pt-4">
+            <div className="row">
               <CarSearch />
             </div>
           </div>

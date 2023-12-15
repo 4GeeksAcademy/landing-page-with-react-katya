@@ -3,89 +3,104 @@ import React from "react";
 export default function CarSearch() {
   return (
     <div classNameName="col-lg-12 g-5">
-      <form>
-        <div className="row mb-3">
-          <div className="col-8">
-            <label for="priceRange1" className="form-label">
-              €
-            </label>
-            <input type="range" className="form-range" id="priceRange1" />
+      <h3 className="text-warning mb-1">Car rentals for any kind of trip</h3>
+      <p className="text-muted mb-4">
+        Great deals at great prices, from the biggest car rental companies
+      </p>
+
+      <form className="row row-cols-lg-auto g-3 align-items-center">
+        <div className="col-12">
+          <label className="visually-hidden" for="inlineFormInputGroupFromDate">
+            dd/mm/yyyy
+          </label>
+          <div className="input-group">
+            <div className="input-group-text">From</div>
+            <input
+              type="date"
+              className="form-control"
+              id="inlineFormInputGroupFromDate"
+              placeholder="FromDate"
+            />
+          </div>
+          <label className="visually-hidden" for="inlineFormInputGroupFromTime">
+            dd/mm/yyyy
+          </label>
+          <div className="input-group mt-2">
+            <input
+              type="time"
+              className="form-control"
+              id="inlineFormInputGroupFromTime"
+              placeholder="FromTime"
+            />
           </div>
         </div>
-        <fieldset className="row mb-3">
-          <div className="col-sm-10">
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="gridRadios"
-                id="gridRadios1"
-                value="option1"
-                checked
-              />
-              <label className="form-check-label" for="gridRadios1">
-                First radio
-              </label>
-            </div>
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="gridRadios"
-                id="gridRadios2"
-                value="option2"
-              />
-              <label className="form-check-label" for="gridRadios2">
-                Second radio
-              </label>
-            </div>
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="gridRadios"
-                id="gridRadios3"
-                value="option3"
-              />
-              <label className="form-check-label" for="gridRadios3">
-                Third radio
-              </label>
-            </div>
+
+        <div className="col-12">
+          <label className="visually-hidden" for="inlineFormInputGroupToDate">
+            dd/mm/yyyy
+          </label>
+          <div className="input-group">
+            <div className="input-group-text">To</div>
+            <input
+              type="date"
+              className="form-control"
+              id="inlineFormInputGroupToDate"
+              placeholder="ToDate"
+            />
           </div>
-        </fieldset>
-        <div className="row mb-3">
-          <div className="col-sm-10 offset-sm-2">
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="gridCheck1"
-              />
-              <label className="form-check-label" for="gridCheck1">
-                Example checkbox
-              </label>
-            </div>
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="gridCheck2"
-              />
-              <label className="form-check-label" for="gridCheck2">
-                Example checkbox
-              </label>
-            </div>
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="gridCheck3"
-              />
-              <label className="form-check-label" for="gridCheck3">
-                Example checkbox
-              </label>
-            </div>
+          <label className="visually-hidden" for="inlineFormInputGroupToTime">
+            dd/mm/yyyy
+          </label>
+          <div className="input-group mt-2">
+            <input
+              type="time"
+              className="form-control"
+              id="inlineFormInputGroupToTime"
+              placeholder="ToTime"
+            />
           </div>
+        </div>
+
+        <div className="col-12">
+          <label className="visually-hidden" for="inlineFormSelectCity">
+            Location
+          </label>
+          <select className="form-select" id="inlineFormSelectCity">
+            <option selected>City</option>
+            <option value="1">Madrid</option>
+            <option value="2">Barcelona</option>
+            <option value="3">Sevilla</option>
+            <option value="4">San Sebastian</option>
+            <option value="5">Malaga</option>
+          </select>
+
+          <label className="visually-hidden" for="inlineFormSelectCompany">
+            Car Company
+          </label>
+          <select className="form-select mt-2" id="inlineFormSelectCompany">
+            <option selected>Company</option>
+            <option value="1">AVIS</option>
+            <option value="2">Hertz</option>
+            <option value="3">Centauro</option>
+            <option value="4">ClickRent</option>
+            <option value="5">GoldCar</option>
+          </select>
+        </div>
+
+        <div className="col-12">
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="inlineFormCheck"
+            />
+            <label className="form-check-label" for="inlineFormCheck">
+              Premium
+            </label>
+          </div>
+          <button type="submit" className="btn btn-success mt-2 w-100">
+            Search
+          </button>
         </div>
       </form>
     </div>
