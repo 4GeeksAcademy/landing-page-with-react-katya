@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CarSearch() {
   return (
-    <div classNameName="col-lg-12 g-5">
+    <div className="col-lg-12 g-5">
       <h3 className="text-warning mb-1">Car rentals for any kind of trip</h3>
       <p className="text-muted mb-4">
         Great deals at great prices, from the biggest car rental companies
@@ -10,7 +10,7 @@ export default function CarSearch() {
 
       <form className="row row-cols-lg-auto g-3 align-items-center">
         <div className="col-12">
-          <label className="visually-hidden" for="inlineFormInputGroupFromDate">
+          <label className="visually-hidden" htmlFor="inlineFormInputGroupFromDate">
             dd/mm/yyyy
           </label>
           <div className="input-group">
@@ -22,7 +22,7 @@ export default function CarSearch() {
               placeholder="FromDate"
             />
           </div>
-          <label className="visually-hidden" for="inlineFormInputGroupFromTime">
+          <label className="visually-hidden" htmlFor="inlineFormInputGroupFromTime">
             dd/mm/yyyy
           </label>
           <div className="input-group mt-2">
@@ -36,7 +36,7 @@ export default function CarSearch() {
         </div>
 
         <div className="col-12">
-          <label className="visually-hidden" for="inlineFormInputGroupToDate">
+          <label className="visually-hidden" htmlFor="inlineFormInputGroupToDate">
             dd/mm/yyyy
           </label>
           <div className="input-group">
@@ -48,7 +48,7 @@ export default function CarSearch() {
               placeholder="ToDate"
             />
           </div>
-          <label className="visually-hidden" for="inlineFormInputGroupToTime">
+          <label className="visually-hidden" htmlFor="inlineFormInputGroupToTime">
             dd/mm/yyyy
           </label>
           <div className="input-group mt-2">
@@ -62,7 +62,7 @@ export default function CarSearch() {
         </div>
 
         <div className="col-12">
-          <label className="visually-hidden" for="inlineFormSelectCity">
+          <label className="visually-hidden" htmlFor="inlineFormSelectCity">
             Location
           </label>
           <select className="form-select" id="inlineFormSelectCity">
@@ -74,7 +74,7 @@ export default function CarSearch() {
             <option value="5">Malaga</option>
           </select>
 
-          <label className="visually-hidden" for="inlineFormSelectCompany">
+          <label className="visually-hidden" htmlFor="inlineFormSelectCompany">
             Car Company
           </label>
           <select className="form-select mt-2" id="inlineFormSelectCompany">
@@ -94,7 +94,7 @@ export default function CarSearch() {
               type="checkbox"
               id="inlineFormCheck"
             />
-            <label className="form-check-label" for="inlineFormCheck">
+            <label className="form-check-label" htmlFor="inlineFormCheck">
               Premium
             </label>
           </div>

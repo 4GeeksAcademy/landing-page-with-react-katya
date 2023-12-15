@@ -4,8 +4,8 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <a class="navbar-brand w-75" href="#">
-        <i class="fas fa-hotel text-success"></i>
+        <a className="navbar-brand w-75" href="#">
+        <i className="fas fa-hotel text-success"></i>
           <span className="fw-semibold">  Company Prototype</span>
         </a>
         <button
@@ -45,15 +45,15 @@ export default function Navbar() {
               </a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form className="d-flex" role="search">
             <input
-              class="form-control me-2"
+              className="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              <i class="fas fa-search"></i>
+            <button className="btn btn-outline-success" type="submit">
+              <i className="fas fa-search"></i>
             </button>
           </form>
         </div>

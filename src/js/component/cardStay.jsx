@@ -66,7 +66,7 @@ export default function CardStay(props) {
                 id={props.contentIdAbout}
                 role="tabpanel"
                 aria-labelledby={props.buttonIdAbout}
-                tabindex="0"
+                tabIndex="0"
               >
                 <div className="card-body">
                   <div className="bg-black bg-opacity-50 p-3 rounded mt-2">
@@ -96,7 +96,7 @@ export default function CardStay(props) {
                 id={props.contentIdLocation}
                 role="tabpanel"
                 aria-labelledby={props.buttonIdLocation}
-                tabindex="0"
+                tabIndex="0"
               >
                 <div className="card-body">
                 <div className="bg-black bg-opacity-50 p-3 rounded mt-2">
@@ -114,7 +114,7 @@ export default function CardStay(props) {
                 id={props.contentIdAvailability}
                 role="tabpanel"
                 aria-labelledby={props.buttonIdAvailability}
-                tabindex="0"
+                tabIndex="0"
               >
                 <div className="card-body container-fluid d-flex flex-column align-items-center justify-content-center">
                 <div className="bg-black bg-opacity-50 p-3 rounded mt-2">

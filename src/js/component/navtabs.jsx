@@ -78,7 +78,7 @@ export default function NavTabs() {
           id="destinations-tab-pane"
           role="tabpanel"
           aria-labelledby="destinations-tab"
-          tabindex="0"
+          tabIndex="0"
         >
           <div className="container-fluid d-flex flex-column align-items-center justify-content-center">
             <div className="row">
@@ -91,7 +91,7 @@ export default function NavTabs() {
           id="stays-tab-pane"
           role="tabpanel"
           aria-labelledby="stays-tab"
-          tabindex="0"
+          tabIndex="0"
         >
           <div className="align-items-center justify-content-center">
             <div className="row">
@@ -136,7 +136,7 @@ export default function NavTabs() {
           id="carRentals-tab-pane"
           role="tabpanel"
           aria-labelledby="carRentals-tab"
-          tabindex="0"
+          tabIndex="0"
         >
           <div className="container-fluid d-flex align-items-center justify-content-center pt-4">
             <div className="row">
