@@ -2,13 +2,13 @@ import React from "react";
 
 const cityOptions = [
     { option: "Madrid" },
-    { option: "Madrid" },
-    { option: "Madrid" },
-    { option: "Madrid" },
-    { option: "Madrid" },
-    { option: "Madrid" },
-    { option: "Madrid" },
-    { option: "Madrid" },
+    { option: "Sevilla" },
+    { option: "Barcelona" },
+    { option: "Malaga" },
+    { option: "Marbella" },
+    { option: "Cáceres" },
+    { option: "San Sebastian" },
+    { option: "Oviedo" },
   ];
 
 export default function CarSearchCityOptions() {
