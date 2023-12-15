@@ -171,7 +171,7 @@ export default function CardStay(props) {
       </div>
     </div>
   );
-}
+};
 
 CardStay.propTypes = {
   buttonIdAbout: PropType.string,

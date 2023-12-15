@@ -2,7 +2,7 @@ import React from "react";
 
 //include images into your bundle
 
-import Navbar from "../navbar";
+import Navbar from "./navbar";
 import Carousel from "./carousel";
 import Footer from "./footer";
 import NavTabs from "./navtabs";
