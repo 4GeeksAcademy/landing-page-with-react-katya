@@ -10,7 +10,10 @@ export default function CarSearch() {
 
       <form className="row row-cols-lg-auto g-3 align-items-center">
         <div className="col-12">
-          <label className="visually-hidden" htmlFor="inlineFormInputGroupFromDate">
+          <label
+            className="visually-hidden"
+            htmlFor="inlineFormInputGroupFromDate"
+          >
             dd/mm/yyyy
           </label>
           <div className="input-group">
@@ -22,7 +25,10 @@ export default function CarSearch() {
               placeholder="FromDate"
             />
           </div>
-          <label className="visually-hidden" htmlFor="inlineFormInputGroupFromTime">
+          <label
+            className="visually-hidden"
+            htmlFor="inlineFormInputGroupFromTime"
+          >
             dd/mm/yyyy
           </label>
           <div className="input-group mt-2">
@@ -36,7 +42,10 @@ export default function CarSearch() {
         </div>
 
         <div className="col-12">
-          <label className="visually-hidden" htmlFor="inlineFormInputGroupToDate">
+          <label
+            className="visually-hidden"
+            htmlFor="inlineFormInputGroupToDate"
+          >
             dd/mm/yyyy
           </label>
           <div className="input-group">
@@ -48,7 +57,10 @@ export default function CarSearch() {
               placeholder="ToDate"
             />
           </div>
-          <label className="visually-hidden" htmlFor="inlineFormInputGroupToTime">
+          <label
+            className="visually-hidden"
+            htmlFor="inlineFormInputGroupToTime"
+          >
             dd/mm/yyyy
           </label>
           <div className="input-group mt-2">
@@ -65,8 +77,11 @@ export default function CarSearch() {
           <label className="visually-hidden" htmlFor="inlineFormSelectCity">
             Location
           </label>
-          <select className="form-select" id="inlineFormSelectCity">
-            <option selected>City</option>
+          <select
+            className="form-select"
+            id="inlineFormSelectCity"
+            placeholder="City"
+          >
             <option value="1">Madrid</option>
             <option value="2">Barcelona</option>
             <option value="3">Sevilla</option>
@@ -77,8 +92,11 @@ export default function CarSearch() {
           <label className="visually-hidden" htmlFor="inlineFormSelectCompany">
             Car Company
           </label>
-          <select className="form-select mt-2" id="inlineFormSelectCompany">
-            <option selected>Company</option>
+          <select
+            className="form-select mt-2"
+            id="inlineFormSelectCompany"
+            placeholder="Company"
+          >
             <option value="1">AVIS</option>
             <option value="2">Hertz</option>
             <option value="3">Centauro</option>

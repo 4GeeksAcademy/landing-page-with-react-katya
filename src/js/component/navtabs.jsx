@@ -15,8 +15,8 @@ const imagesDestinations = [
 ];
 
 export default function NavTabs() {
-  const imagesInHTML = imagesDestinations.map((image) => {
-    return <CardDestination imgUrl={image.url} />;
+  const imagesInHTML = imagesDestinations.map((image, index) => {
+    return <CardDestination imgUrl={image.url} key={index} />;
   });
 
   return (
