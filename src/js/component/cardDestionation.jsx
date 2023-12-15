@@ -4,7 +4,7 @@ import PropType from "prop-types";
 export default function CardDestionation(props) {
   return (
     <div className="col-lg-3 col-sm-12 col-md-6 g-5">
-      <div className="card border-success" style={{ maxWidth: "350px" }}>
+      <div className="card border-success mx-auto" style={{ maxWidth: "350px" }}>
         <img
           src={props.imgUrl}
           className="card-img-top"

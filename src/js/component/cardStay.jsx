@@ -22,7 +22,7 @@ export default function CardStay(props) {
                   className="nav-link active"
                   id={props.buttonIdAbout}
                   data-bs-toggle="tab"
-                  data-bs-target={props.targetAbout}
+                  data-bs-target={`#${props.contentIdAbout}`}
                   type="button"
                   role="tab"
                   aria-controls={props.contentIdAbout}
@@ -36,7 +36,7 @@ export default function CardStay(props) {
                   className="nav-link"
                   id={props.buttonIdLocation}
                   data-bs-toggle="tab"
-                  data-bs-target={props.targetLocation}
+                  data-bs-target={`#${props.contentIdLocation}`}
                   type="button"
                   role="tab"
                   aria-controls={props.contentIdLocation}
@@ -45,12 +45,15 @@ export default function CardStay(props) {
                   <span className="text-success">Location</span>
                 </button>
               </li>
-              <li className="nav-item" role="presentation"/* -AVAILABILITY TAB- */>
-                <button 
+              <li
+                className="nav-item"
+                role="presentation" /* -AVAILABILITY TAB- */
+              >
+                <button
                   className="nav-link"
                   id={props.buttonIdAvailability}
                   data-bs-toggle="tab"
-                  data-bs-target={props.targetAvailability}
+                  data-bs-target={`#${props.contentIdAvailability}`}
                   type="button"
                   role="tab"
                   aria-controls={props.contentIdAvailability}
@@ -69,7 +72,9 @@ export default function CardStay(props) {
                 tabIndex="0"
               >
                 <div className="card-body">
-                  <div className="bg-black bg-opacity-50 p-3 rounded mt-2" /* -ABOUT TAB CONTENT- */>
+                  <div
+                    className="bg-black bg-opacity-50 p-3 rounded mt-2" /* -ABOUT TAB CONTENT- */
+                  >
                     {" "}
                     <h5 className="card-title text-warning">
                       Prototype Hotel Name{" "}
@@ -99,12 +104,12 @@ export default function CardStay(props) {
                 tabIndex="0"
               >
                 <div className="card-body">
-                <div className="bg-black bg-opacity-50 p-3 rounded mt-2">
-                  <h5 className="card-title text-warning">
-                    <i className="fas fa-map-marker-alt text-warning"></i>{" "}
-                    Location City{" "}
-                  </h5>
-                  <p>Address</p>
+                  <div className="bg-black bg-opacity-50 p-3 rounded mt-2">
+                    <h5 className="card-title text-warning">
+                      <i className="fas fa-map-marker-alt text-warning"></i>{" "}
+                      Location City{" "}
+                    </h5>
+                    <p>Address</p>
                   </div>
                 </div>
               </div>
@@ -117,46 +122,46 @@ export default function CardStay(props) {
                 tabIndex="0"
               >
                 <div className="card-body container-fluid d-flex flex-column align-items-center justify-content-center">
-                <div className="bg-black bg-opacity-50 p-3 rounded mt-2">
-                  <h5 className="card-title text-warning mb-3">
-                    Choose your dates
-                  </h5>
-                  <div>
-                    {" "}
-                    <div className="input-group mb-3">
-                      <span
-                        className="input-group-text "
-                        id="inputGroup-sizing-default"
-                      >
-                        Check-in
-                      </span>
-                      <input
-                        type="date"
-                        className="form-control"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default"
-                      />
+                  <div className="bg-black bg-opacity-50 p-3 rounded mt-2">
+                    <h5 className="card-title text-warning mb-3">
+                      Choose your dates
+                    </h5>
+                    <div>
+                      {" "}
+                      <div className="input-group mb-3">
+                        <span
+                          className="input-group-text "
+                          id="inputGroup-sizing-default"
+                        >
+                          Check-in
+                        </span>
+                        <input
+                          type="date"
+                          className="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                        />
+                      </div>
+                      <div className="input-group mb-3">
+                        <span
+                          className="input-group-text "
+                          id="inputGroup-sizing-default"
+                        >
+                          Check-out
+                        </span>
+                        <input
+                          type="date"
+                          className="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                        />
+                      </div>
                     </div>
-                    <div className="input-group mb-3">
-                      <span
-                        className="input-group-text "
-                        id="inputGroup-sizing-default"
-                      >
-                        Check-out
-                      </span>
-                      <input
-                        type="date"
-                        className="form-control"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default"
-                      />
+                    <div className="w-50 container-fluid d-flex flex-column align-items-center justify-content-center">
+                      <a href="#" className="btn btn-success fw-bold">
+                        Search
+                      </a>
                     </div>
-                  </div>
-                  <div className="w-50 container-fluid d-flex flex-column align-items-center justify-content-center">
-                    <a href="#" className="btn btn-success fw-bold">
-                      Search
-                    </a>
-                  </div>
                   </div>
                 </div>
               </div>
@@ -166,16 +171,15 @@ export default function CardStay(props) {
       </div>
     </div>
   );
-};
+}
 
 CardStay.propTypes = {
   buttonIdAbout: PropType.string,
-  targetAbout: PropType.string,
   contentIdAbout: PropType.string,
+
   buttonIdLocation: PropType.string,
-  targetLocation: PropType.string,
   contentIdLocation: PropType.string,
+
   buttonIdAvailability: PropType.string,
-  targetAvailability: PropType.string,
   contentIdAvailability: PropType.string,
 };
