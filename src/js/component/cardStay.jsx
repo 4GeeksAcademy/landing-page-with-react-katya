@@ -17,7 +17,7 @@ export default function CardStay(props) {
               id="tabs-tab"
               role="tablist"
             >
-              <li className="nav-item" role="presentation">
+              <li className="nav-item" role="presentation" /* -ABOUT TAB- */>
                 <button
                   className="nav-link active"
                   id={props.buttonIdAbout}
@@ -31,7 +31,7 @@ export default function CardStay(props) {
                   <span className="text-success">About</span>
                 </button>
               </li>
-              <li className="nav-item" role="presentation">
+              <li className="nav-item" role="presentation" /* -LOCATION TAB- */>
                 <button
                   className="nav-link"
                   id={props.buttonIdLocation}
@@ -45,8 +45,8 @@ export default function CardStay(props) {
                   <span className="text-success">Location</span>
                 </button>
               </li>
-              <li className="nav-item" role="presentation">
-                <button
+              <li className="nav-item" role="presentation"/* -AVAILABILITY TAB- */>
+                <button 
                   className="nav-link"
                   id={props.buttonIdAvailability}
                   data-bs-toggle="tab"
@@ -69,7 +69,7 @@ export default function CardStay(props) {
                 tabIndex="0"
               >
                 <div className="card-body">
-                  <div className="bg-black bg-opacity-50 p-3 rounded mt-2">
+                  <div className="bg-black bg-opacity-50 p-3 rounded mt-2" /* -ABOUT TAB CONTENT- */>
                     {" "}
                     <h5 className="card-title text-warning">
                       Prototype Hotel Name{" "}
@@ -91,7 +91,7 @@ export default function CardStay(props) {
                 </div>
               </div>
 
-              <div
+              <div /* -LOCATION TAB CONTENT- */
                 className="tab-pane fade"
                 id={props.contentIdLocation}
                 role="tabpanel"
@@ -109,7 +109,7 @@ export default function CardStay(props) {
                 </div>
               </div>
 
-              <div
+              <div /* -AVAILABILITY TAB CONTENT- */
                 className="tab-pane fade"
                 id={props.contentIdAvailability}
                 role="tabpanel"

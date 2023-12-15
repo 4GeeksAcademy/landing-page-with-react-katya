@@ -3,6 +3,7 @@ import CardDestination from "./cardDestionation";
 import CardStay from "./cardStay";
 import CarSearch from "./carSearch";
 
+/* -DESTINATION IMAGES- */
 const imagesDestinations = [
   { url: "https://picsum.photos/id/259/300/300" },
   { url: "https://picsum.photos/id/128/300/300" },
@@ -15,12 +16,13 @@ const imagesDestinations = [
 ];
 
 export default function NavTabs() {
+
   const imagesInHTML = imagesDestinations.map((image, index) => {
     return <CardDestination imgUrl={image.url} key={index} />;
   });
 
   return (
-    // -TABS-
+    /* -TABS- */
     <div>
       <ul
         className="nav nav-tabs justify-content-center mt-3"
@@ -72,25 +74,25 @@ export default function NavTabs() {
       </ul>
 
       <div className="tab-content" id="myTabContent">
-        <div
+        <div /* -DESTINATION TAB CONTENT- */
           className="tab-pane fade show active"
           id="destinations-tab-pane"
           role="tabpanel"
           aria-labelledby="destinations-tab"
           tabIndex="0"
         >
-          <div className="container-fluid d-flex flex-column align-items-center justify-content-center">
+          <div className="container-fluid d-flex flex-column align-items-center justify-content-center"> 
             <div className="row">{imagesInHTML}</div>
           </div>
         </div>
-        <div
+        <div /* -STAYS TAB CONTENT- */
           className="tab-pane fade"
           id="stays-tab-pane"
           role="tabpanel"
           aria-labelledby="stays-tab"
           tabIndex="0"
         >
-          <div className="align-items-center justify-content-center">
+          <div className="align-items-center justify-content-center" >
             <div className="row">
               <CardStay
                 buttonIdAbout="tabs-about1-tab"
@@ -130,7 +132,7 @@ export default function NavTabs() {
             </div>
           </div>
         </div>
-        <div
+        <div /* -CAR RENTAL TAB CONTENT- */
           className="tab-pane fade"
           id="carRentals-tab-pane"
           role="tabpanel"

@@ -2,14 +2,14 @@ import React from "react";
 
 export default function CarSearch() {
   return (
-    <div className="col-lg-12">
+    <div className="col-lg-12"> 
       <h3 className="text-warning mb-1">Car rentals for any kind of trip</h3>
       <p className="text-muted mb-4">
         Great deals at great prices, from the biggest car rental companies
       </p>
-
+      
       <form className="row row-cols-lg-auto g-3 align-items-center">
-        <div className="col-12">
+        <div className="col-12" /* -DATES & TIME INPUT- */>
           <label
             className="visually-hidden"
             htmlFor="inlineFormInputGroupFromDate"
@@ -29,7 +29,7 @@ export default function CarSearch() {
             className="visually-hidden"
             htmlFor="inlineFormInputGroupFromTime"
           >
-            dd/mm/yyyy
+            hh/mm
           </label>
           <div className="input-group mt-2">
             <input
@@ -73,7 +73,7 @@ export default function CarSearch() {
           </div>
         </div>
 
-        <div className="col-12">
+        <div className="col-12" /* -LOCATION & COMPANY SELECTION- */>
           <label className="visually-hidden" htmlFor="inlineFormSelectCity">
             Location
           </label>
