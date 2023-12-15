@@ -15,6 +15,11 @@ const imagesDestinations = [
 ];
 
 export default function NavTabs() {
+
+  const imagesInHTML = imagesDestinations.map(image => {
+    return <CardDestination imgUrl={image.url} />
+  });
+
   return (
     // -TABS-
     <div>
@@ -77,16 +82,7 @@ export default function NavTabs() {
         >
           <div className="container-fluid d-flex flex-column align-items-center justify-content-center">
             <div className="row">
-              <CardDestination imgUrl={imagesDestinations[0].url} />
-              <CardDestination imgUrl={imagesDestinations[1].url} />
-              <CardDestination imgUrl={imagesDestinations[2].url} />
-              <CardDestination imgUrl={imagesDestinations[3].url} />
-            </div>
-            <div className="row">
-              <CardDestination imgUrl={imagesDestinations[4].url} />
-              <CardDestination imgUrl={imagesDestinations[5].url} />
-              <CardDestination imgUrl={imagesDestinations[6].url} />
-              <CardDestination imgUrl={imagesDestinations[7].url} />
+              {imagesInHTML}
             </div>
           </div>
         </div>
