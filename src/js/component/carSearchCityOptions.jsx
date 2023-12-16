@@ -14,7 +14,7 @@ const cityOptions = [
 export default function CarSearchCityOptions() {
 
     const cityOptionsInHTML = cityOptions.map((city, index) => {
-        return <option value={index}>{city.option}</option>
+        return <option key={index} value={index}>{city.option}</option>
       });
 
     return (

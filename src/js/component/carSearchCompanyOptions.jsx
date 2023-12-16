@@ -11,7 +11,7 @@ const companyOptions = [
   export default function CarSearchCompanyOptions() {
 
     const companyOptionsInHTML = companyOptions.map((company, index) => {
-        return <option value={index}>{company.option}</option>
+        return <option key={index} value={index}>{company.option}</option>
     });
 
     return (
